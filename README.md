@@ -19,13 +19,17 @@ Ce projet est une reproduction du back-end du site [Vinted](https://www.vinted.f
 - Recherche d'articles avec filtrage et tri
 
 ## Comment installer et exécuter le projet
-1. Clonez ce dépôt :
+1. Clonez ce dépôt : https://github.com/CarpLib/Vinted.git
 
-2. Installez les dépendances du projet :
+2. Installez les dépendances du projet : npm install
 
-3. Créez un fichier `.env` à la racine du projet et ajoutez-y les variables d'environnement nécessaires (vous pouvez vous baser sur le fichier `.env.example` fourni) :
+3. Créez un fichier `.env` à la racine du projet et ajoutez-y les variables d'environnement nécessaires :
 
-DB_URI=mongodb+srv://votre-utilisateur:votre-mot-de-passe@votre-cluster.mongodb.net/votre-base-de-donnees?retryWrites=true&w=majority
+MONGODB_URI=mongodb://127.0.0.1:27017/Vinted
+COULDINARY_CLOUD_NAME=xxxxxxxxxx
+COULDINARY_API_KEY=xxxxxxxxxxx
+COULDINARY_API_SECRET=xxxxxxxxxxxx
+PORT=xxxxxx
 
 
 4. Démarrez le serveur :
