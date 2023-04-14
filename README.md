@@ -35,7 +35,7 @@ PORT=3000
 
 4. Démarrez le serveur :
 
-```javascript
+```shell
 npm start
 ```
 
