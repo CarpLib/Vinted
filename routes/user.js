@@ -15,7 +15,7 @@ router.post("/user/signup", fileUpload(), async (req, res) => {
     if (!username || !email || !password) {
       return res.status(400).json("Le Username est manquant");
     }
-    const user = await User.findOne({ email });
+    const user = await User.findOne({ email }).populate("account");
 
     if (user !== null) {
       return res.status(409).json("Cette adresse mail a déjà été utilisé");
