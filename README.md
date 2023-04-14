@@ -25,15 +25,13 @@ Ce projet est une reproduction du back-end du site [Vinted](https://www.vinted.f
 
 3. Créez un fichier `.env` à la racine du projet et ajoutez-y les variables d'environnement nécessaires :
 
-`MONGODB_URI=mongodb://127.0.0.1:27017/Vinted`
-
-`COULDINARY_CLOUD_NAME=xxxxxxxxxx`
-
-`COULDINARY_API_KEY=xxxxxxxxxxx`
-
-`COULDINARY_API_SECRET=xxxxxxxxxxxx`
-
-`PORT=3000`
+```javascript
+MONGODB_URI=mongodb://127.0.0.1:27017/Vinted
+COULDINARY_CLOUD_NAME=xxxxxxxxxx
+COULDINARY_API_KEY=xxxxxxxxxxx
+COULDINARY_API_SECRET=xxxxxxxxxxxx
+PORT=3000
+```
 
 4. Démarrez le serveur :
 
