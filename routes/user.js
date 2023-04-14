@@ -36,7 +36,7 @@ router.post("/user/signup", fileUpload(), async (req, res) => {
       salt,
     });
 
-    if (req.files.avatar) {
+    if (req.files) {
       const pictureUpload = await cloudinary.uploader.upload(
         convertToBase64(req.files.avatar),
         {
@@ -53,10 +53,7 @@ router.post("/user/signup", fileUpload(), async (req, res) => {
     res.json({
       _id: newUser._id,
       token,
-      account: {
-        username,
-        avatar,
-      },
+      account: newUser.account,
     });
   } catch (error) {
     res.status(500).json({ message: error.message });
