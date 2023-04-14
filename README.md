@@ -49,14 +49,27 @@ Ici, vous pouvez lister les endpoints de votre API et donner une brève descript
 Exemple :
 
 - `POST /user/signup` : Inscription d'un nouvel utilisateur
-  - `Points d'entrée` :
+  - `Points d'entrée` (form-data) :
     - username
     - email
     - password
     - newsletter (boolean)
     - avatar (file)
 - `POST /user/login` : Connexion d'un utilisateur existant
+  - `Points d'entrée` (body) :
+    - email
+    - password
 - `POST /offer/publish` : Publier une nouvelle offre
+  - `Points d'entrée` (form-data) :
+    - title
+    - description
+    - price
+    - brand
+    - size
+    - condition
+    - color
+    - city
+    - picture (file)
 - `PUT /offer/update` : Mettre à jour une offre
 - `DELETE /offer/delete` : Supprimer une offre
 - `GET /offers` : Recherche des offres avec tri et filtrage
