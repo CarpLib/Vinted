@@ -48,10 +48,14 @@ Ici, vous pouvez lister les endpoints de votre API et donner une brève descript
 
 Exemple :
 
-- `POST /api/users/signup` : Inscription d'un nouvel utilisateur
-- `POST /api/users/login` : Connexion d'un utilisateur existant
-- `GET /api/items` : Récupérer la liste des articles, avec filtrage et tri en option
-- ...
+- `POST /user/signup` : Inscription d'un nouvel utilisateur
+  - `POST /user/signup`
+- `POST /user/login` : Connexion d'un utilisateur existant
+- `POST /offer/publish` : Publier une nouvelle offre
+- `PUT /offer/update` : Mettre à jour une offre
+- `DELETE /offer/delete` : Supprimer une offre
+- `GET /offers` : Recherche des offres avec tri et filtrage
+- `GET /offer/:id` : Recherche d'une offre en particulier
 
 
 ## Auteur
