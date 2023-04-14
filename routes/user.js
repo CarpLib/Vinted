@@ -37,14 +37,13 @@ router.post("/user/signup", fileUpload(), async (req, res) => {
     });
 
     if (req.files.avatar) {
-      console.log("Je suis dans le IF");
       const pictureUpload = await cloudinary.uploader.upload(
         convertToBase64(req.files.avatar),
         {
           folder: `/Vinted/user/${newUser._id}`,
         }
       );
-      console.log("Picture upload", pictureUpload);
+      // console.log("Picture upload", pictureUpload);
       newUser.account.avatar = pictureUpload;
       // console.log(newUser);
     }
@@ -56,6 +55,7 @@ router.post("/user/signup", fileUpload(), async (req, res) => {
       token,
       account: {
         username,
+        avatar,
       },
     });
   } catch (error) {
