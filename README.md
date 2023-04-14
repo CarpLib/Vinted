@@ -1,4 +1,4 @@
-# Vinted Clone - BackEnd en JavaScript
+# Vinted Clone - BackEnd en JavaScript - Le Reacteur
 
 Ce projet est une reproduction du back-end du site [Vinted](https://www.vinted.fr/), un marché en ligne pour les vêtements d'occasion. Le but de ce projet est d'apprendre et de pratiquer les compétences en développement web, en particulier en JavaScript et dans la création d'API RESTFUL.
 
