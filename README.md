@@ -53,4 +53,4 @@ Exemple :
 
 ## Auteur
 
-[Laurent REUZE](https://github.com/votre-nom-d-utilisateur)
+[Laurent REUZE](https://github.com/CarpLib)
