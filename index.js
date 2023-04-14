@@ -7,9 +7,9 @@ const app = express();
 app.use(express.json());
 mongoose.connect(process.env.MONGODB_URI);
 cloudinary.config({
-  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-  api_key: process.env.CLOUDINARY_API_KEY,
-  api_secret: process.env.CLOUDINARY_API_SECRET,
+  cloud_name: process.env.COULDINARY_CLOUD_NAME,
+  api_key: process.env.COULDINARY_API_KEY,
+  api_secret: process.env.COULDINARY_API_SECRET,
   secure: true,
 });
 

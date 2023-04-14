@@ -10,8 +10,8 @@ const convertToBase64 = require("../utils/base64");
 
 router.post("/user/signup", fileUpload(), async (req, res) => {
   try {
-    console.log(req.files);
-    const { username, email, password, newsletter, avatar } = req.body;
+    // console.log(req.files);
+    const { username, email, password, newsletter } = req.body;
     if (!username || !email || !password) {
       return res.status(400).json("Le Username est manquant");
     }
@@ -36,14 +36,17 @@ router.post("/user/signup", fileUpload(), async (req, res) => {
       salt,
     });
 
-    if (avatar) {
+    if (req.files.avatar) {
+      console.log("Je suis dans le IF");
       const pictureUpload = await cloudinary.uploader.upload(
         convertToBase64(req.files.avatar),
         {
           folder: `/Vinted/user/${newUser._id}`,
         }
       );
+      console.log("Picture upload", pictureUpload);
       newUser.account.avatar = pictureUpload;
+      // console.log(newUser);
     }
 
     await newUser.save();
