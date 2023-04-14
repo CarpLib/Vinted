@@ -49,7 +49,12 @@ Ici, vous pouvez lister les endpoints de votre API et donner une brève descript
 Exemple :
 
 - `POST /user/signup` : Inscription d'un nouvel utilisateur
-  - `POST /user/signup`
+  - `Points d'entrée` :
+    - username
+    - email
+    - password
+    - newsletter (boolean)
+    - avatar (file)
 - `POST /user/login` : Connexion d'un utilisateur existant
 - `POST /offer/publish` : Publier une nouvelle offre
 - `PUT /offer/update` : Mettre à jour une offre
