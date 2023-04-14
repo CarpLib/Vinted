@@ -71,9 +71,31 @@ Exemple :
     - city
     - picture (file)
 - `PUT /offer/update` : Mettre à jour une offre
+  - `Points d'entrée` (form-data) Toutes les entrées ne sont pas obligatoire:
+    - id
+    - title
+    - description
+    - price
+    - brand
+    - size
+    - condition
+    - color
+    - city
+    - picture (file)
 - `DELETE /offer/delete` : Supprimer une offre
+  - `Points d'entrée` (query) :
+    - id
 - `GET /offers` : Recherche des offres avec tri et filtrage
+  - `Points d'entrée` (form-data) :
+    - title
+    - priceMin
+    - priceMax
+    - sort ("price-desc" ou "price-asc")
+    - page (par défaut:1, page à afficher )
+    - limit (nombre d'article par page)
 - `GET /offer/:id` : Recherche d'une offre en particulier
+  - `Points d'entrée` (Params) :
+    - id
 
 
 ## Auteur
