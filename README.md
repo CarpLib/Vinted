@@ -33,7 +33,7 @@ Ce projet est une reproduction du back-end du site [Vinted](https://www.vinted.f
 
 `COULDINARY_API_SECRET=xxxxxxxxxxxx`
 
-`PORT=xxxxxx`
+`PORT=3000`
 
 4. Démarrez le serveur :
 
