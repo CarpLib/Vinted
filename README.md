@@ -37,7 +37,10 @@ Ce projet est une reproduction du back-end du site [Vinted](https://www.vinted.f
 
 4. Démarrez le serveur :
 
+```javascript
 npm start
+```
+
 
 
 Le serveur devrait maintenant être en fonctionnement à l'adresse `http://localhost:3000`.
